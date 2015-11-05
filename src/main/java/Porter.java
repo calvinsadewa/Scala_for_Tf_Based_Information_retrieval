@@ -8,8 +8,6 @@
 
 */
 
-import java.io.*;
-
 class NewString {
     public String str;
 

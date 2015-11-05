@@ -1,3 +1,5 @@
+import java.io.PrintWriter
+
 /**
  * Created by calvin-pc on 9/23/2015.
  */
@@ -44,6 +46,14 @@ class coba {
     TF
   }
 
+  def time[R](block: => R): R = {
+    val t0 = System.nanoTime()
+    val result = block    // call-by-name
+    val t1 = System.nanoTime()
+    println("Elapsed time: " + (t1 - t0) + "ns")
+    result
+  }
+
   /**
    * Update stop_word, inverse_document, and IDFterm and no2title
    */
@@ -75,9 +85,13 @@ class coba {
       }
     })
 
-    val listWordMap = listContent map ( t => {
-      val (name,content) = t
-      val word_vec = stringToWordVec(content,stop_word,stemmer)
+    val listWordVec = listContent map ( t => {
+      val (name, content) = t
+      (name,stringToWordVec(content, stop_word, stemmer))
+    })
+
+    val listWordMap = listWordVec map ( t => {
+      val (name,word_vec) = t
       val word_map = word_vec.groupBy( t => t).mapValues(_.length).withDefaultValue(0)
       (name,word_map)
     })
@@ -87,30 +101,46 @@ class coba {
       word_map.keys.toSeq
     })).distinct.sorted
 
-    val listName = (listWordMap flatMap ( t => {
+    val listName = listWordMap flatMap ( t => {
       val (name,word_map) = t
       name
-    }))
+    })
 
-    IDFterm = listTerm.map (term => {
-      val idf = Math.log(listWordMap.length.toDouble / listWordMap.count(t => {
-        val (_, word_map) = t
-        word_map(term) > 0
+    {
+      val temp_occurence : collection.mutable.Map[String,Int] = collection.mutable.Map()
+      listTerm.map (term => {
+        temp_occurence.update(term,0)
       })
-      )
-      term -> idf.toFloat
-    }).toMap.withDefaultValue(0)
 
-    inverted_document_file = (listTerm map ( term => {
-      val document_weight: Map[String,Float] = (listWordMap flatMap ( t => {
+      for {
+        (_, word_map) <- listWordMap
+        term <- word_map.keys
+      } yield temp_occurence.update(term,temp_occurence(term) + 1)
+
+      val n = listWordMap.length
+
+      IDFterm = temp_occurence.mapValues( value => Math.log(n/value).toFloat).toMap.withDefaultValue(0.0f);
+    }
+
+    {
+      val temp_inverted_document_file: collection.mutable.Map[String, scala.collection.mutable.Map[String, Float]] = scala.collection.mutable.Map()
+
+      listTerm map (term => {
+        temp_inverted_document_file.update(term,scala.collection.mutable.Map().withDefaultValue(0))
+      })
+
+      listWordMap map (t => {
         val (name,word_map) = t
-        if (word_map.contains(term))
-          Seq(name -> TF_IDF(term,word_map,tf,idf).toFloat)
-        else Seq()
-      })).toMap.withDefaultValue(0)
+        word_map.toSeq map (t2 => {
+          val (term, _) = t2
+          temp_inverted_document_file(term).update(name,TF_IDF(term,word_map,tf,idf).toFloat)
+        })
+      })
 
-      term -> document_weight
-    }) toMap) withDefaultValue(Map().withDefaultValue(0))
+      inverted_document_file = temp_inverted_document_file.mapValues(_.toMap.withDefaultValue(0.0f)).
+                                      toMap.withDefaultValue(Map().withDefaultValue(0))
+
+    }
 
     if (normalization) {
       val name_to_weights = inverted_document_file.values.flatMap(_.toSeq).groupBy(_._1)
@@ -127,6 +157,14 @@ class coba {
 
       inverted_document_file = inverted_document_file.withDefaultValue(Map().withDefaultValue(0))
     }
+
+    val writer = new PrintWriter("inverted_file.csv", "UTF-8");
+    writer.println("Term , Document , Weight");
+    for {
+      (term,map) <- inverted_document_file
+      (document,weight) <- map
+    } yield writer.println(term + " , " + document + " , " + weight)
+    writer.close();
   }
 
   def test(): Unit = {
@@ -142,12 +180,21 @@ class coba {
       val length = Math.sqrt(listWordWeight.map(_._2).map(t => t * t).sum)
       listWordWeight = listWordWeight.map(t => (t._1,t._2/length))
     }
-    val all_weight = listWordWeight.foldLeft(Seq():Seq[(String,Float)])((seq,t) => {
-      val (word,weight) = t
-      val seq_weight = inverted_document_file(word).mapValues(_*weight).mapValues(_.toFloat).toSeq
-      seq ++ seq_weight
-    })
-    val document_similarity = all_weight.groupBy(_._1).mapValues(_.foldLeft(0.0f)(_ + _._2))
+
+    var document_similarity:Map[String,Float] = Map()
+
+    {
+      val doc2sim: collection.mutable.Map[String,Float] = collection.mutable.Map().withDefaultValue(0)
+      listWordWeight.map(t => {
+        val (word,weight) = t
+        inverted_document_file(word).mapValues(_*weight).mapValues(_.toFloat).toSeq.map(t => {
+          val (doc,sim) = t
+          doc2sim.update(doc,doc2sim(doc)+sim)
+        })
+      })
+
+      document_similarity = doc2sim.toMap
+    }
     document_similarity.toSeq.sortBy(_._2).reverse
   }
 
