@@ -1,5 +1,7 @@
 import java.io.PrintWriter
 
+import scala.concurrent.Future
+
 /**
  * Created by calvin-pc on 9/23/2015.
  */
@@ -19,11 +21,11 @@ class coba {
    */
   var IDFterm: Map[String,Float] = Map()
   // sequence of stop word
-  var stop_word: Seq[String] = Seq()
+  var stop_word: Set[String] = Set()
   // map from no document to title document
   var no2title: Map[String,String] = Map()
 
-  def stringToWordVec (s:String, stop_word: Seq[String], stem: Boolean): Seq[String] = {
+  def stringToWordVec (s:String, stop_word: Set[String], stem: Boolean): Seq[String] = {
     val word_vec = s split "\\W+" filterNot( stop_word.contains(_))
     if (stem) {
       val stemmer = new Porter()
@@ -46,14 +48,6 @@ class coba {
     TF
   }
 
-  def time[R](block: => R): R = {
-    val t0 = System.nanoTime()
-    val result = block    // call-by-name
-    val t1 = System.nanoTime()
-    println("Elapsed time: " + (t1 - t0) + "ns")
-    result
-  }
-
   /**
    * Update stop_word, inverse_document, and IDFterm and no2title
    */
@@ -63,7 +57,7 @@ class coba {
     if (!stop_word_location.isEmpty)
     {
       val source = Source.fromFile(new File(stop_word_location))
-      stop_word = source.mkString split "\\W+" map (_.toLowerCase)
+      stop_word = source.mkString split "\\W+" map (_.toLowerCase) toSet
     }
     val dir = new File(document_collection_location)
 
@@ -124,38 +118,43 @@ class coba {
 
     {
       val temp_inverted_document_file: collection.mutable.Map[String, scala.collection.mutable.Map[String, Float]] = scala.collection.mutable.Map()
+      var doc2length: Map[String,Double] = Map()
 
       listTerm map (term => {
         temp_inverted_document_file.update(term,scala.collection.mutable.Map().withDefaultValue(0))
       })
 
-      listWordMap map (t => {
-        val (name,word_map) = t
-        word_map.toSeq map (t2 => {
-          val (term, _) = t2
-          temp_inverted_document_file(term).update(name,TF_IDF(term,word_map,tf,idf).toFloat)
+      if (!normalization) {
+        listWordMap map (t => {
+          val (name,word_map) = t
+          word_map.toSeq map (t2 => {
+            val (term, _) = t2
+            temp_inverted_document_file(term).update(name,TF_IDF(term,word_map,tf,idf).toFloat)
+          })
         })
-      })
+        doc2length = doc2length.withDefaultValue(1)
+      }
+      else {
+        val mutable_doc2length: collection.mutable.Map[String,Double] = collection.mutable.Map().withDefaultValue(0)
+        listWordMap map (t => {
+          val (name,word_map) = t
+          word_map.toSeq map (t2 => {
+            val (term, _) = t2
+            val weight = TF_IDF(term,word_map,tf,idf)
+            temp_inverted_document_file(term).update(name,weight.toFloat)
+            mutable_doc2length.update(name,mutable_doc2length(name) + weight * weight)
+          })
+        })
+        doc2length = mutable_doc2length.toMap.mapValues(Math.sqrt(_))
+      }
 
-      inverted_document_file = temp_inverted_document_file.mapValues(_.toMap.withDefaultValue(0.0f)).
-                                      toMap.withDefaultValue(Map().withDefaultValue(0))
+      inverted_document_file = temp_inverted_document_file.mapValues(
+        _.toMap.map(t => {
+          val (doc,weight) = t
+          (doc,weight/doc2length(doc).toFloat)
+        }).withDefaultValue(0.0f)
+      ).toMap.withDefaultValue(Map().withDefaultValue(0))
 
-    }
-
-    if (normalization) {
-      val name_to_weights = inverted_document_file.values.flatMap(_.toSeq).groupBy(_._1)
-      val name_to_length = name_to_weights.mapValues({ weights =>
-          val length_square = weights.map( t => t._2).map(t => t * t).foldLeft(0.0f)(_ + _)
-          Math.sqrt(length_square)
-      })
-      inverted_document_file = inverted_document_file.mapValues({doc2termweight =>
-        doc2termweight.map( {t =>
-          val (name,weight) = t
-          (name,weight/name_to_length(name).toFloat)
-        }) withDefaultValue(0)
-      })
-
-      inverted_document_file = inverted_document_file.withDefaultValue(Map().withDefaultValue(0))
     }
 
     val writer = new PrintWriter("inverted_file.csv", "UTF-8");
@@ -175,19 +174,19 @@ class coba {
               query: String) : Seq[(String,Float)] = {
     val word_vec = stringToWordVec(query,stop_word,stemmer)
     val word_map = word_vec.groupBy( t => t).mapValues(_.length).withDefaultValue(0)
-    var listWordWeight = word_vec.map(word => (word,TF_IDF(word,word_map,tf, idf)))
+    var word2weight = word_vec.map(word => (word,TF_IDF(word,word_map,tf, idf))).toMap
     if (normalization) {
-      val length = Math.sqrt(listWordWeight.map(_._2).map(t => t * t).sum)
-      listWordWeight = listWordWeight.map(t => (t._1,t._2/length))
+      val length = Math.sqrt(word2weight.map(_._2).map(t => t * t).sum)
+      word2weight = word2weight.mapValues(_/length)
     }
 
     var document_similarity:Map[String,Float] = Map()
 
     {
       val doc2sim: collection.mutable.Map[String,Float] = collection.mutable.Map().withDefaultValue(0)
-      listWordWeight.map(t => {
+      word2weight.map(t => {
         val (word,weight) = t
-        inverted_document_file(word).mapValues(_*weight).mapValues(_.toFloat).toSeq.map(t => {
+        inverted_document_file(word).mapValues(_*weight).mapValues(_.toFloat).map(t => {
           val (doc,sim) = t
           doc2sim.update(doc,doc2sim(doc)+sim)
         })
@@ -200,12 +199,12 @@ class coba {
 
   def experiment_query(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
                        query: String, relevance: Seq[String]) = {
-    def computeRecall (judgement : Seq[String], result: Seq[String]) : Float = {
+    def computeRecall (judgement : Set[String], result: Seq[String]) : Float = {
       val relevant_result = result.filter(judgement.contains(_))
-      relevant_result.length.toFloat / judgement.length
+      relevant_result.length.toFloat / judgement.size
     }
 
-    def computePrecision (judgement : Seq[String], result: Seq[String]) : Float = {
+    def computePrecision (judgement : Set[String], result: Seq[String]) : Float = {
       val relevant_result = result.filter(judgement.contains(_))
       if (result.length == 0) 0
       else relevant_result.length.toFloat / result.length
@@ -224,27 +223,36 @@ class coba {
       (recurse(0,0,result,0) / judgement.length).toFloat
     }
 
-    def computeNonInterpolatedPrecision (judgement : Seq[String], result: Seq[String]) : Float = {
+    def computeNonInterpolatedPrecision (judgement : Set[String], result: Seq[String]) : Float = {
+      var ret = 0.0
+      result.zipWithIndex.foldLeft(0.0)((matched,t) => {
+        val (doc,index) = t
+        if (judgement.contains(doc)) {
+          ret = ret + matched / (index + 1)
+          matched + 1
+        }
+        else matched
+      })
       def recurse(cur_index : Int, matched: Int, res: Seq[String], acc:Double): Double = {
-        if (res.isEmpty || matched == judgement.length) return acc
-        val head = res.head
-        val tail = res.tail
-        if (judgement.contains(head))
-          recurse(cur_index + 1, matched + 1, tail, acc + matched.toFloat/(cur_index + 1))
+        if (res.isEmpty) return acc
+        if (judgement.contains(res.head))
+          recurse(cur_index + 1, matched + 1, res.tail, acc + matched.toFloat/(cur_index + 1))
         else
-          recurse(cur_index + 1, matched , tail, acc)
+          recurse(cur_index + 1, matched , res.tail, acc)
       }
-      (recurse(0,0,result,0) / judgement.length).toFloat
+      //(recurse(0,0,result,0) / judgement.size).toFloat
+      (ret/judgement.size).toFloat
     }
 
     val result = search(tf,idf,normalization,stemmer,query)
     val resultString = result.map(_._1)
+    val judge_set = relevance.toSet
     experimentResult(
       query,
       result,
-      computePrecision(relevance,resultString),
-      computeRecall(relevance,resultString),
-      computeNonInterpolatedPrecision(relevance,resultString))
+      computePrecision(judge_set,resultString),
+      computeRecall(judge_set,resultString),
+      computeNonInterpolatedPrecision(judge_set,resultString))
   }
 
   def experiment(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
@@ -330,13 +338,13 @@ object coba {
   case class augmentedTF() extends TF;
   case class rawTF() extends TF;
   case class binaryTF() extends TF;
-  def main(args: Array[String]) = {
+  def main(args: Array[String]) = time {
     import java.io.PrintWriter
 
-    val doc_location = "D:\\tugas\\STBI\\CISI\\doc"
-    val query_location = "D:\\tugas\\STBI\\CISI\\query"
-    val relevance_location = "D:\\tugas\\STBI\\CISI\\relevance"
-    val stop_word_location = "D:\\tugas\\STBI\\stop_word.txt"
+    val doc_location = "D:\\tugas\\Scala_for_Tf_Based_Information_retrieval\\CISI\\doc"
+    val query_location = "D:\\tugas\\Scala_for_Tf_Based_Information_retrieval\\CISI\\query"
+    val relevance_location = "D:\\tugas\\Scala_for_Tf_Based_Information_retrieval\\CISI\\relevance"
+    val stop_word_location = "D:\\tugas\\Scala_for_Tf_Based_Information_retrieval\\stop_word.txt"
 
     val list_TF = Seq(new binaryTF(), new augmentedTF(), new logisticTF(), new rawTF())
     val name_TF = Seq("Binary TF","Augmented TF","Logistic TF","Raw TF")
@@ -362,19 +370,22 @@ object coba {
     } yield (t,i,s,n)
 
     println("Done listing configuration")
+    all_configuration.sliding(4).flatMap( seqConf => {
+
+      Seq()
+    })
 
     val all_result = all_configuration.flatMap( conf1 => {
       println("Index = " + conf1.toString())
       val search_engine = new coba;
-      search_engine.create_index(conf1._1._1,conf1._2._1,conf1._4._1,conf1._3._1,stop_word_location,doc_location)
-      all_configuration.map(conf2 => {
-        println("Query = " + conf2.toString())
+      time (search_engine.create_index(conf1._1._1,conf1._2._1,conf1._4._1,conf1._3._1,stop_word_location,doc_location))
+      time (all_configuration.map(conf2 => {
         val res = search_engine.experiment(conf2._1._1,conf2._2._1,conf2._4._1,conf2._3._1,query_location,relevance_location)
         val stat_precission = new Statistic(res.map(t => t._2.precission).map(_.toDouble).toArray)
         val stat_recall = new Statistic(res.map(t => t._2.recall).map(_.toDouble).toArray)
         val stat_non_interpolated = new Statistic(res.map(t => t._2.interpolated_precission).map(_.toDouble).toArray)
         (conf1,conf2,stat_precission,stat_recall,stat_non_interpolated)
-      })
+      }))
     })
 
     println("Done listing all result")
@@ -432,5 +443,13 @@ object coba {
     val writer = new PrintWriter("result.txt", "UTF-8");
     writer.println(string.toString());
     writer.close();
+  }
+
+  def time[R](block: => R): R = {
+    val t0 = System.nanoTime()
+    val result = block    // call-by-name
+    val t1 = System.nanoTime()
+    println("Elapsed time: " + (t1 - t0) + "ns")
+    result
   }
 }
