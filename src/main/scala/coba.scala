@@ -1,5 +1,7 @@
 import java.io.PrintWriter
 
+import _root_.coba.{ide_dec_hi, ide_regular, roccio, FeedbackType}
+
 /**
  * Created by calvin-pc on 9/23/2015.
  */
@@ -22,6 +24,8 @@ class coba {
   var stop_word: Set[String] = Set()
   // map from no document to title document
   var no2title: Map[String,String] = Map()
+  //set of all document title
+  var setDocument: Set[String] = Set()
 
   def stringToWordVec (s:String, stop_word: Set[String], stem: Boolean): Seq[String] = {
     val word_vec = s split "\\W+" filterNot( stop_word.contains(_))
@@ -93,10 +97,10 @@ class coba {
       word_map.keys.toSeq
     })).distinct.sorted
 
-    val listName = listWordMap flatMap ( t => {
+    setDocument = listWordMap map ( t => {
       val (name,word_map) = t
       name
-    })
+    }) toSet
 
     {
       val temp_occurence : collection.mutable.Map[String,Int] = collection.mutable.Map()
@@ -164,19 +168,61 @@ class coba {
     writer.close();
   }
 
-  def test(): Unit = {
-    create_index(coba.rawTF(),true,true,false,"","D:\\tugas\\STBI\\doc_col")
-  }
-
   def search(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
               query: String) : Seq[(String,Float)] = {
+    val word2weight = query2weight(tf,idf,normalization,stemmer,query)
+    searchWithWeight(word2weight)
+  }
+
+  def query2weight(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
+                   query: String) : Map[String, Double] = {
     val word_vec = stringToWordVec(query,stop_word,stemmer)
     val word_map = word_vec.groupBy( t => t).mapValues(_.length).withDefaultValue(0)
-    var word2weight = word_vec.map(word => (word,TF_IDF(word,word_map,tf, idf))).toMap
+    val word2weight = word_vec.map(word => (word,TF_IDF(word,word_map,tf, idf))).toMap
     if (normalization) {
       val length = Math.sqrt(word2weight.map(_._2).map(t => t * t).sum)
-      word2weight = word2weight.mapValues(_/length)
+      word2weight.mapValues(_/length)
     }
+    else word2weight
+  }
+
+  def pseudoRelevanceSearch(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
+             query: String, top_n: Int, feedback_type:FeedbackType) : Seq[(String,Float)] = {
+    val word2weight = query2weight(tf,idf,normalization,stemmer,query)
+    val first_result = searchWithWeight(word2weight)
+    val (relevants, rest) = first_result.map(_._1).splitAt(top_n)
+    val not_relevants = rest ++ ((setDocument -- relevants -- rest).toSeq)
+    val new_word2weight = relevanceFeedbackQueryWeight (relevants,not_relevants, word2weight,feedback_type)
+    searchWithWeight(new_word2weight)
+  }
+
+  //return the modified query weight using the relevance feedback type
+  // not_relevants head should be has max similarity if using ide_dec_hi feedback type
+  def relevanceFeedbackQueryWeight (relevants:Seq[String],not_relevants:Seq[String], query2weight: Map[String,Double],
+                                    feedback_type:FeedbackType): Map[String,Double] = {
+    feedback_type match {
+      case roccio() => query2weight.map{case (term,weight) => {
+        val doc2weight = inverted_document_file(term)
+        var new_weight = weight + relevants.foldLeft(0.0)(_ + doc2weight(_)) / relevants.length
+        new_weight = new_weight - not_relevants.foldLeft(0.0)(_ + doc2weight(_)) / not_relevants.length
+        (term,new_weight)
+      }}
+      case ide_regular() => query2weight.map{case (term,weight) => {
+        val doc2weight = inverted_document_file(term)
+        var new_weight = weight + relevants.foldLeft(0.0)(_ + doc2weight(_))
+        new_weight = new_weight - not_relevants.foldLeft(0.0)(_ + doc2weight(_))
+        (term,new_weight)
+      }}
+      case ide_dec_hi() => query2weight.map{case (term,weight) => {
+        val doc2weight = inverted_document_file(term)
+        var new_weight = weight + relevants.foldLeft(0.0)(_ + doc2weight(_))
+        new_weight = new_weight - doc2weight(not_relevants.head)
+        (term,new_weight)
+      }}
+    }
+  }
+
+  def searchWithWeight(word2weight: Map[String,Double]) : Seq[(String,Float)] = {
 
     var document_similarity:Map[String,Float] = Map()
 
@@ -336,6 +382,11 @@ object coba {
   case class augmentedTF() extends TF;
   case class rawTF() extends TF;
   case class binaryTF() extends TF;
+
+  sealed trait FeedbackType;
+  case class roccio() extends FeedbackType;
+  case class ide_regular() extends FeedbackType;
+  case class ide_dec_hi() extends FeedbackType;
   def main(args: Array[String]) = time {
     import java.io.PrintWriter
 
@@ -360,25 +411,27 @@ object coba {
     val name_normal = Seq("Dengan normalization","Tidak pakai normalization")
     val all_normal = list_Stem.zip(name_normal)
 
-    val all_configuration = for {
+    val index_configuration = for {
       t <- all_TF;
       i <- all_IDF;
       s <- all_Stem;
       n <- all_normal
     } yield (t,i,s,n)
 
+    val query_configuration = for {
+      t <- all_TF;
+      i <- all_IDF;
+      n <- all_normal
+    } yield (t,i,n)
+
     println("Done listing configuration")
-    all_configuration.sliding(4).flatMap( seqConf => {
 
-      Seq()
-    })
-
-    val all_result = all_configuration.flatMap( conf1 => {
+    val all_result = index_configuration.flatMap( conf1 => {
       println("Index = " + conf1.toString())
       val search_engine = new coba;
       time (search_engine.create_index(conf1._1._1,conf1._2._1,conf1._4._1,conf1._3._1,stop_word_location,doc_location))
-      time (all_configuration.map(conf2 => {
-        val res = search_engine.experiment(conf2._1._1,conf2._2._1,conf2._4._1,conf2._3._1,query_location,relevance_location)
+      time (query_configuration.map(conf2 => {
+        val res = search_engine.experiment(conf2._1._1,conf2._2._1,conf2._3._1,conf1._3._1,query_location,relevance_location)
         val stat_precission = new Statistic(res.map(t => t._2.precission).map(_.toDouble).toArray)
         val stat_recall = new Statistic(res.map(t => t._2.recall).map(_.toDouble).toArray)
         val stat_non_interpolated = new Statistic(res.map(t => t._2.interpolated_precission).map(_.toDouble).toArray)
@@ -399,8 +452,8 @@ object coba {
       string.append("Konfigurasi query" + System.lineSeparator())
       string.append("TF = " + conf_query._1._2 + System.lineSeparator())
       string.append("IDF = " + conf_query._2._2 + System.lineSeparator())
-      string.append("Stemmer = " + conf_query._3._2 + System.lineSeparator())
-      string.append("Normalization = " + conf_query._4._2 + System.lineSeparator())
+      string.append("Stemmer = " + conf_index._3._2 + System.lineSeparator())
+      string.append("Normalization = " + conf_query._3._2 + System.lineSeparator())
       string.append("------------" + System.lineSeparator())
       string.append("Precission" + System.lineSeparator())
       string.append("Mean = " + stat_precission.getMean + System.lineSeparator())
