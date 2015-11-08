@@ -1,7 +1,5 @@
 import java.io.PrintWriter
 
-import _root_.coba.{ide_dec_hi, ide_regular, roccio, FeedbackType}
-
 /**
  * Created by calvin-pc on 9/23/2015.
  */
@@ -197,7 +195,7 @@ class coba {
   }
 
   //Relevance Feedback using old weighted query(query2weight)
-  def relevanceFeedbackSearch(query2weight: Map[String,Double], top_n: Int, feedback_type:FeedbackType,
+  def relevanceFeedbackSearch(query2weight: Map[String,Double], top_n: Int, feedback_type:coba.FeedbackType,
                        relevance_set: Set[String], search_seen:Boolean, prev_result:Seq[String]) : Seq[(String,Float)] = {
     val seen_doc = prev_result.take(top_n).toSet
     val relevant2docs = seen_doc.toSeq.groupBy(relevance_set.contains(_)).withDefaultValue(Seq())
@@ -217,7 +215,7 @@ class coba {
 
   //Pseudo feedback variant of search
   def pseudoFeedbackSearch(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
-             query: String, top_n: Int, feedback_type:FeedbackType) : Seq[(String,Float)] = {
+             query: String, top_n: Int, feedback_type:coba.FeedbackType) : Seq[(String,Float)] = {
     val word2weight = map_query2weight(tf,idf,normalization,stemmer,query)
     val first_result = searchWithWeight(word2weight)
     val (relevants, rest) = first_result.map(_._1).splitAt(top_n)
@@ -231,21 +229,21 @@ class coba {
   //return the modified query weight using the relevance feedback type
   // not_relevants head should be has max similarity if using ide_dec_hi feedback type
   def relevanceFeedbackQueryWeight (relevants:Seq[String],not_relevants:Seq[String], query2weight: Map[String,Double],
-                                    feedback_type:FeedbackType): Map[String,Double] = {
+                                    feedback_type:coba.FeedbackType): Map[String,Double] = {
     feedback_type match {
-      case roccio() => query2weight.map{case (term,weight) => {
+      case coba.roccio() => query2weight.map{case (term,weight) => {
         val doc2weight = inverted_document_file(term)
         var new_weight = weight + relevants.foldLeft(0.0)(_ + doc2weight(_)) / Math.max(relevants.length,1)
         new_weight = new_weight - not_relevants.foldLeft(0.0)(_ + doc2weight(_)) / Math.max(not_relevants.length,1)
         (term,new_weight)
       }}
-      case ide_regular() => query2weight.map{case (term,weight) => {
+      case coba.ide_regular() => query2weight.map{case (term,weight) => {
         val doc2weight = inverted_document_file(term)
         var new_weight = weight + relevants.foldLeft(0.0)(_ + doc2weight(_))
         new_weight = new_weight - not_relevants.foldLeft(0.0)(_ + doc2weight(_))
         (term,new_weight)
       }}
-      case ide_dec_hi() => query2weight.map{case (term,weight) => {
+      case coba.ide_dec_hi() => query2weight.map{case (term,weight) => {
         val doc2weight = inverted_document_file(term)
         var new_weight = weight + relevants.foldLeft(0.0)(_ + doc2weight(_))
         new_weight = new_weight - not_relevants.headOption.map(doc2weight(_)).getOrElse(0.0f)
@@ -376,7 +374,7 @@ class coba {
 
   //Experiment for pseudo feedback TF-IDF-Normalization model
   def experimentPseudoFeedback(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
-                 query_location: String, relevance_location: String, top_n: Int, feedback_type:FeedbackType): Seq[(String,experimentResult)] = {
+                 query_location: String, relevance_location: String, top_n: Int, feedback_type:coba.FeedbackType): Seq[(String,experimentResult)] = {
     val query_dir = new File(query_location)
     val relevance_dir = new File(relevance_location)
 
@@ -419,7 +417,7 @@ class coba {
   //Experiment for relevance feedback TF-IDF-Normalization model
   def experimentRelevanceFeedback(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
                                   query_location: String, relevance_location: String, top_n: Int,
-                                  feedback_type:FeedbackType, search_seen: Boolean): Seq[(String,experimentResult)] = {
+                                  feedback_type:coba.FeedbackType, search_seen: Boolean): Seq[(String,experimentResult)] = {
     val query_dir = new File(query_location)
     val relevance_dir = new File(relevance_location)
 
