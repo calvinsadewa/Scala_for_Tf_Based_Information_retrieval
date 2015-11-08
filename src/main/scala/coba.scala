@@ -236,19 +236,19 @@ class coba {
         var new_weight = weight + relevants.foldLeft(0.0)(_ + doc2weight(_)) / Math.max(relevants.length,1)
         new_weight = new_weight - not_relevants.foldLeft(0.0)(_ + doc2weight(_)) / Math.max(not_relevants.length,1)
         (term,new_weight)
-      }}
+      }}.filter(_._2 > 0)
       case coba.ide_regular() => query2weight.map{case (term,weight) => {
         val doc2weight = inverted_document_file(term)
         var new_weight = weight + relevants.foldLeft(0.0)(_ + doc2weight(_))
         new_weight = new_weight - not_relevants.foldLeft(0.0)(_ + doc2weight(_))
         (term,new_weight)
-      }}
+      }}.filter(_._2 > 0)
       case coba.ide_dec_hi() => query2weight.map{case (term,weight) => {
         val doc2weight = inverted_document_file(term)
         var new_weight = weight + relevants.foldLeft(0.0)(_ + doc2weight(_))
         new_weight = new_weight - not_relevants.headOption.map(doc2weight(_)).getOrElse(0.0f)
         (term,new_weight)
-      }}
+      }}.filter(_._2 > 0)
     }
   }
 
@@ -282,21 +282,7 @@ class coba {
 
     def computePrecision (judgement : Set[String], result: Seq[String]) : Float = {
       val relevant_result = result.filter(judgement.contains(_))
-      if (result.length == 0) 0
-      else relevant_result.length.toFloat / result.length
-    }
-
-    def computeInterpolatedPrecision (judgement : Seq[String], result: Seq[String]) : Float = {
-      def recurse(cur_index : Int, matched: Int, res: Seq[String], acc:Double): Double = {
-        if (res.isEmpty || matched == judgement.length) return acc
-        val head = res.head
-        val tail = res.tail
-        if (judgement.contains(head))
-          recurse(cur_index + 1, matched + 1, tail, acc + matched.toFloat/(cur_index + 1))
-        else
-          recurse(cur_index + 1, matched , tail, acc)
-      }
-      (recurse(0,0,result,0) / judgement.length).toFloat
+      relevant_result.length.toFloat / result.length
     }
 
     def computeNonInterpolatedPrecision (judgement : Set[String], result: Seq[String]) : Float = {
@@ -309,14 +295,6 @@ class coba {
         }
         else matched
       })
-      def recurse(cur_index : Int, matched: Int, res: Seq[String], acc:Double): Double = {
-        if (res.isEmpty) return acc
-        if (judgement.contains(res.head))
-          recurse(cur_index + 1, matched + 1, res.tail, acc + matched.toFloat/(cur_index + 1))
-        else
-          recurse(cur_index + 1, matched , res.tail, acc)
-      }
-      //(recurse(0,0,result,0) / judgement.size).toFloat
       (ret/judgement.size).toFloat
     }
 
@@ -363,7 +341,7 @@ class coba {
       (query_name,query_text) <- query_content
       (relevance_name,relevance_text) <- relevance_content
       if (query_name == relevance_name)
-    } yield (query_name,query_text,relevance_text.lines.filterNot(_.isEmpty))
+    } yield (query_name,query_text,relevance_text.lines.filterNot(_.isEmpty).toSeq)
 
     experiment_data.map( t=> {
       val (name,text,relevances) = t
@@ -405,7 +383,7 @@ class coba {
       (query_name,query_text) <- query_content
       (relevance_name,relevance_text) <- relevance_content
       if (query_name == relevance_name)
-    } yield (query_name,query_text,relevance_text.lines.filterNot(_.isEmpty))
+    } yield (query_name,query_text,relevance_text.lines.filterNot(_.isEmpty).toSeq)
 
     experiment_data.map( t=> {
       val (name,text,relevances) = t
@@ -448,14 +426,14 @@ class coba {
       (query_name,query_text) <- query_content
       (relevance_name,relevance_text) <- relevance_content
       if (query_name == relevance_name)
-    } yield (query_name,query_text,relevance_text.lines.filterNot(_.isEmpty))
+    } yield (query_name,query_text,relevance_text.lines.filterNot(_.isEmpty).toSeq)
 
     experiment_data.map( t=> {
       val (name,text,relevances) = t
       val query2weight = map_query2weight(tf,idf,normalization,stemmer,text)
       val first_result = searchWithWeight(query2weight)
       val search_result = relevanceFeedbackSearch(
-        newQuery2Weights,top_n,feedback_type, relevances.toSet,search_seen,first_result.map(_._1)
+        query2weight,top_n,feedback_type, relevances.toSet,search_seen,first_result.map(_._1)
       )
       (name,computeExperimentResult(text,search_result,relevances.toSeq))
     })
@@ -517,6 +495,10 @@ object coba {
     val relevance_location = "D:\\tugas\\Scala_for_Tf_Based_Information_retrieval\\CISI\\relevance"
     val stop_word_location = "D:\\tugas\\Scala_for_Tf_Based_Information_retrieval\\stop_word.txt"
 
+    val experiment_normal = false
+    val experiment_pseudo_feedback = true
+    val experiment_relevance_feedback = true
+
     val list_TF = Seq(new binaryTF(), new augmentedTF(), new logisticTF(), new rawTF())
     val name_TF = Seq("Binary TF","Augmented TF","Logistic TF","Raw TF")
     val all_TF = list_TF.zip(name_TF)
@@ -533,6 +515,18 @@ object coba {
     val name_normal = Seq("Dengan normalization","Tidak pakai normalization")
     val all_normal = list_Stem.zip(name_normal)
 
+    val list_feedback = Seq(roccio(),ide_regular(),ide_dec_hi())
+    val name_feedback = Seq("Roccio","Ide Regular","Ide Dec Hi")
+    val all_feedback = list_feedback.zip(name_feedback)
+
+    val list_search_seen = Seq(true,false)
+    val name_search_seen = Seq("Iya","Tidak")
+    val all_search_seen = list_search_seen.zip(name_search_seen)
+
+    val list_top_n = Seq(5,10,20)
+    val name_top_n = list_top_n.map(_.toString)
+    val all_top_n = list_top_n.zip(name_top_n)
+
     val index_configuration = for {
       t <- all_TF;
       i <- all_IDF;
@@ -546,76 +540,154 @@ object coba {
       n <- all_normal
     } yield (t,i,n)
 
+    val pseudo_feedback_configuration = for {
+      f <- all_feedback
+      top_n <- all_top_n
+    } yield (f,top_n)
+
+    val relevance_feedback_configuration = for {
+      f <- all_feedback
+      top_n <- all_top_n
+      seen <- all_search_seen
+    } yield (f,top_n,seen)
+
     println("Done listing configuration")
 
-    val all_result = index_configuration.flatMap( conf1 => {
-      println("Index = " + conf1.toString())
-      val search_engine = new coba;
-      time (search_engine.create_index(conf1._1._1,conf1._2._1,conf1._4._1,conf1._3._1,stop_word_location,doc_location))
-      time (query_configuration.map(conf2 => {
-        val res = search_engine.experiment(conf2._1._1,conf2._2._1,conf2._3._1,conf1._3._1,query_location,relevance_location)
-        val stat_precission = new Statistic(res.map(t => t._2.precission).map(_.toDouble).toArray)
-        val stat_recall = new Statistic(res.map(t => t._2.recall).map(_.toDouble).toArray)
-        val stat_non_interpolated = new Statistic(res.map(t => t._2.interpolated_precission).map(_.toDouble).toArray)
-        (conf1,conf2,stat_precission,stat_recall,stat_non_interpolated)
-      }))
-    })
+    if (experiment_normal) time {
+      val all_result = index_configuration.flatMap( conf1 => {
+        val search_engine = new coba;
+        time(search_engine.create_index(conf1._1._1,conf1._2._1,conf1._4._1,conf1._3._1,stop_word_location,doc_location))
+        time(query_configuration.map(conf2 => {
+          val res = search_engine.experiment(conf2._1._1,conf2._2._1,conf2._3._1,conf1._3._1,query_location,relevance_location)
+          val stat_precission = new Statistic(res.map(t => t._2.precission).map(_.toDouble).toArray)
+          val stat_recall = new Statistic(res.map(t => t._2.recall).map(_.toDouble).toArray)
+          val stat_non_interpolated = new Statistic(res.map(t => t._2.interpolated_precission).map(_.toDouble).toArray)
+          (conf1,conf2,stat_precission,stat_recall,stat_non_interpolated)
+        }))
+      })
 
-    println("Done listing all result")
-    val string = new StringBuilder
-    all_result.map( t => {
-      val (conf_index,conf_query,stat_precission,stat_recall,stat_non_interpolated) = t
-      string.append("Konfigurasi index" + System.lineSeparator())
-      string.append("TF = " + conf_index._1._2 + System.lineSeparator())
-      string.append("IDF = " + conf_index._2._2 + System.lineSeparator())
-      string.append("Stemmer = " + conf_index._3._2 + System.lineSeparator())
-      string.append("Normalization = " + conf_index._4._2 + System.lineSeparator())
-      string.append("------------" + System.lineSeparator())
-      string.append("Konfigurasi query" + System.lineSeparator())
-      string.append("TF = " + conf_query._1._2 + System.lineSeparator())
-      string.append("IDF = " + conf_query._2._2 + System.lineSeparator())
-      string.append("Stemmer = " + conf_index._3._2 + System.lineSeparator())
-      string.append("Normalization = " + conf_query._3._2 + System.lineSeparator())
-      string.append("------------" + System.lineSeparator())
-      string.append("Precission" + System.lineSeparator())
-      string.append("Mean = " + stat_precission.getMean + System.lineSeparator())
-      string.append("Std Dev = " + stat_precission.getStdDev + System.lineSeparator())
-      string.append("Median = " + stat_precission.median() + System.lineSeparator())
-      string.append("------------" + System.lineSeparator())
-      string.append("Recall" + System.lineSeparator())
-      string.append("Mean = " + stat_recall.getMean + System.lineSeparator())
-      string.append("Std Dev = " + stat_recall.getStdDev + System.lineSeparator())
-      string.append("Median = " + stat_recall.median() + System.lineSeparator())
-      string.append("------------" + System.lineSeparator())
-      string.append("Non Interpolated Precission" + System.lineSeparator())
-      string.append("Mean = " + stat_non_interpolated.getMean + System.lineSeparator())
-      string.append("Std Dev = " + stat_non_interpolated.getStdDev + System.lineSeparator())
-      string.append("Median = " + stat_non_interpolated.median() + System.lineSeparator())
-      string.append("------------END-----------------" + System.lineSeparator())
-    })
-    val best_prec = all_result.sortBy(_._3.getMean).reverse.head
-    string.append("Best Mean Precission" + System.lineSeparator())
-    string.append("Mean = " + best_prec._3.getMean + System.lineSeparator())
-    string.append("Konfigurasi Index" + best_prec._1.toString() + System.lineSeparator())
-    string.append("Konfigurasi Query" + best_prec._2.toString() + System.lineSeparator())
-    string.append("------------END-----------------" + System.lineSeparator())
-    val best_recall = all_result.sortBy(_._4.getMean).reverse.head
-    string.append("Best Mean Recall" + System.lineSeparator())
-    string.append("Mean = " + best_recall._4.getMean + System.lineSeparator())
-    string.append("Konfigurasi Index" + best_recall._1.toString() + System.lineSeparator())
-    string.append("Konfigurasi Query" + best_recall._2.toString() + System.lineSeparator())
-    string.append("------------END-----------------" + System.lineSeparator())
-    val best_non_interpolated = all_result.sortBy(_._5.getMean).reverse.head
-    string.append("Best Mean Non interpolated average precission" + System.lineSeparator())
-    string.append("Mean = " + best_non_interpolated._5.getMean + System.lineSeparator())
-    string.append("Konfigurasi Index" + best_non_interpolated._1.toString() + System.lineSeparator())
-    string.append("Konfigurasi Query" + best_non_interpolated._2.toString() + System.lineSeparator())
-    string.append("------------END-----------------" + System.lineSeparator())
+      println("Done listing all result")
+      val string = new StringBuilder
+      all_result.map { case (conf_index, conf_query, stat_precission, stat_recall, stat_non_interpolated) =>
+        (conf_index,conf_query,stat_non_interpolated.getMean)
+      }.sortBy(_._3).reverse.map( t => {
+        val (conf_index,conf_query,non_interpolated) = t
+        string.append("Konfigurasi index" + System.lineSeparator())
+        string.append("TF = " + conf_index._1._2 + System.lineSeparator())
+        string.append("IDF = " + conf_index._2._2 + System.lineSeparator())
+        string.append("Stemmer = " + conf_index._3._2 + System.lineSeparator())
+        string.append("Normalization = " + conf_index._4._2 + System.lineSeparator())
+        string.append("------------" + System.lineSeparator())
+        string.append("Konfigurasi query" + System.lineSeparator())
+        string.append("TF = " + conf_query._1._2 + System.lineSeparator())
+        string.append("IDF = " + conf_query._2._2 + System.lineSeparator())
+        string.append("Stemmer = " + conf_index._3._2 + System.lineSeparator())
+        string.append("Normalization = " + conf_query._3._2 + System.lineSeparator())
+        string.append("------------" + System.lineSeparator())
+        string.append("Non Interpolated Precission" + System.lineSeparator())
+        string.append("Mean = " + non_interpolated + System.lineSeparator())
+        string.append("------------END-----------------" + System.lineSeparator())
+      })
 
-    println(string)
-    val writer = new PrintWriter("result.txt", "UTF-8");
-    writer.println(string.toString());
-    writer.close();
+      val writer = new PrintWriter("result_normal.txt", "UTF-8");
+      writer.println(string.toString());
+      writer.close();
+    }
+
+    if (experiment_pseudo_feedback) time {
+      val all_result = index_configuration.flatMap( conf1 => {
+        val search_engine = new coba;
+        println(conf1)
+        time(search_engine.create_index(conf1._1._1,conf1._2._1,conf1._4._1,conf1._3._1,stop_word_location,doc_location))
+        time(query_configuration.flatMap(conf2 => time(pseudo_feedback_configuration.map (conf3 => {
+          val res = search_engine.experimentPseudoFeedback(conf2._1._1,conf2._2._1,conf2._3._1,conf1._3._1,query_location,
+            relevance_location,conf3._2._1,conf3._1._1)
+          val stat_precission = new Statistic(res.map(t => t._2.precission).map(_.toDouble).toArray)
+          val stat_recall = new Statistic(res.map(t => t._2.recall).map(_.toDouble).toArray)
+          val stat_non_interpolated = new Statistic(res.map(t => t._2.interpolated_precission).map(_.toDouble).toArray)
+          (conf1,conf2,stat_precission,stat_recall,stat_non_interpolated,conf3)
+        }))))
+      })
+
+      println("Done listing all result")
+      val string = new StringBuilder
+      all_result.map { case (conf_index, conf_query, stat_precission, stat_recall, stat_non_interpolated,conf_pseudo) =>
+        (conf_index,conf_query,stat_non_interpolated.getMean,conf_pseudo)
+      }.sortBy(_._3).reverse.map( t => {
+        val (conf_index,conf_query,stat_non_interpolated,conf_pseudo) = t
+        string.append("Konfigurasi index" + System.lineSeparator())
+        string.append("TF = " + conf_index._1._2 + System.lineSeparator())
+        string.append("IDF = " + conf_index._2._2 + System.lineSeparator())
+        string.append("Stemmer = " + conf_index._3._2 + System.lineSeparator())
+        string.append("Normalization = " + conf_index._4._2 + System.lineSeparator())
+        string.append("------------" + System.lineSeparator())
+        string.append("Konfigurasi query" + System.lineSeparator())
+        string.append("TF = " + conf_query._1._2 + System.lineSeparator())
+        string.append("IDF = " + conf_query._2._2 + System.lineSeparator())
+        string.append("Stemmer = " + conf_index._3._2 + System.lineSeparator())
+        string.append("Normalization = " + conf_query._3._2 + System.lineSeparator())
+        string.append("------------" + System.lineSeparator())
+        string.append("Konfigurasi pseudo feedback" + System.lineSeparator())
+        string.append("Feedback = " + conf_pseudo._1._2 + System.lineSeparator())
+        string.append("Top N = " + conf_pseudo._2._2 + System.lineSeparator())
+        string.append("------------" + System.lineSeparator())
+        string.append("Non Interpolated Precission" + System.lineSeparator())
+        string.append("Mean = " + stat_non_interpolated + System.lineSeparator())
+        string.append("------------END-----------------" + System.lineSeparator())
+      })
+
+      val writer = new PrintWriter("result_pseudo.txt", "UTF-8");
+      writer.println(string.toString());
+      writer.close();
+    }
+
+    if (experiment_relevance_feedback) time {
+      val all_result = index_configuration.flatMap( conf1 => {
+        val search_engine = new coba;
+        println(conf1)
+        time(search_engine.create_index(conf1._1._1,conf1._2._1,conf1._4._1,conf1._3._1,stop_word_location,doc_location))
+        time(query_configuration.flatMap(conf2 => time(relevance_feedback_configuration.map (conf3 => {
+          val res = search_engine.experimentRelevanceFeedback(conf2._1._1,conf2._2._1,conf2._3._1,conf1._3._1,query_location,
+            relevance_location,conf3._2._1,conf3._1._1,conf3._3._1)
+          val stat_precission = new Statistic(res.map(t => t._2.precission).map(_.toDouble).toArray)
+          val stat_recall = new Statistic(res.map(t => t._2.recall).map(_.toDouble).toArray)
+          val stat_non_interpolated = new Statistic(res.map(t => t._2.interpolated_precission).map(_.toDouble).toArray)
+          (conf1,conf2,stat_precission,stat_recall,stat_non_interpolated,conf3)
+        }))))
+      })
+
+      println("Done listing all result")
+      val string = new StringBuilder
+      all_result.map { case (conf_index,conf_query,stat_precission,stat_recall,stat_non_interpolated,conf_pseudo) =>
+        (conf_index,conf_query,stat_non_interpolated.getMean,conf_pseudo)
+      }.sortBy(_._3).reverse.map( t => {
+        val (conf_index,conf_query,stat_non_interpolated,conf_pseudo) = t
+        string.append("Konfigurasi index" + System.lineSeparator())
+        string.append("TF = " + conf_index._1._2 + System.lineSeparator())
+        string.append("IDF = " + conf_index._2._2 + System.lineSeparator())
+        string.append("Stemmer = " + conf_index._3._2 + System.lineSeparator())
+        string.append("Normalization = " + conf_index._4._2 + System.lineSeparator())
+        string.append("------------" + System.lineSeparator())
+        string.append("Konfigurasi query" + System.lineSeparator())
+        string.append("TF = " + conf_query._1._2 + System.lineSeparator())
+        string.append("IDF = " + conf_query._2._2 + System.lineSeparator())
+        string.append("Stemmer = " + conf_index._3._2 + System.lineSeparator())
+        string.append("Normalization = " + conf_query._3._2 + System.lineSeparator())
+        string.append("------------" + System.lineSeparator())
+        string.append("Konfigurasi relevance feedback" + System.lineSeparator())
+        string.append("Feedback = " + conf_pseudo._1._2 + System.lineSeparator())
+        string.append("Top N = " + conf_pseudo._2._2 + System.lineSeparator())
+        string.append("Search Seen = " + conf_pseudo._3._2 + System.lineSeparator())
+        string.append("------------" + System.lineSeparator())
+        string.append("Non Interpolated Precission" + System.lineSeparator())
+        string.append("Mean = " + stat_non_interpolated + System.lineSeparator())
+        string.append("------------END-----------------" + System.lineSeparator())
+      })
+
+      val writer = new PrintWriter("result_relevance_feedback.txt", "UTF-8");
+      writer.println(string.toString());
+      writer.close();
+    }
   }
 
   def time[R](block: => R): R = {
@@ -624,5 +696,15 @@ object coba {
     val t1 = System.nanoTime()
     println("Elapsed time: " + (t1 - t0) + "ns")
     result
+  }
+
+  def javaSet2scalaSet[R] (java_set: java.util.Set[R]): Set[R] = {
+    import scala.collection.JavaConversions._
+    val set: scala.collection.mutable.Set[R] = java_set
+    set.toSet
+  }
+
+  def stripSimilarity (results: Seq[(String,Float)]): Seq[String] = {
+    return results.map(_._1)
   }
 }
