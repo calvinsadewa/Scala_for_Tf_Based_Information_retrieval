@@ -266,8 +266,7 @@ class coba {
     document_similarity.toSeq.sortBy(_._2).reverse
   }
 
-  def experiment_query(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
-                       query: String, relevance: Seq[String]): experimentResult = {
+  def computeExperimentResult(query:String, search_result: Seq[(String,Float)], relevance: Seq[String]): experimentResult = {
     def computeRecall (judgement : Set[String], result: Seq[String]) : Float = {
       val relevant_result = result.filter(judgement.contains(_))
       relevant_result.length.toFloat / judgement.size
@@ -313,12 +312,11 @@ class coba {
       (ret/judgement.size).toFloat
     }
 
-    val result = search(tf,idf,normalization,stemmer,query)
-    val resultString = result.map(_._1)
+    val resultString = search_result.map(_._1)
     val judge_set = relevance.toSet
     experimentResult(
       query,
-      result,
+      search_result,
       computePrecision(judge_set,resultString),
       computeRecall(judge_set,resultString),
       computeNonInterpolatedPrecision(judge_set,resultString))
@@ -360,14 +358,100 @@ class coba {
 
     experiment_data.map( t=> {
       val (name,text,relevances) = t
-      (name,experiment_query(tf,idf,normalization,stemmer,text,relevances.toSeq))
+      val search_result = search(tf,idf,normalization,stemmer,text)
+      (name,computeExperimentResult(text,search_result,relevances.toSeq))
     })
   }
 
-  def experimentText(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
-                 query_location: String, relevance_location: String): String = {
-    val list = experiment(tf,idf,normalization,stemmer,query_location,relevance_location)
-    list.foldLeft(new String())((s, t) => {
+  def experimentPseudoFeedback(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
+                 query_location: String, relevance_location: String, top_n: Int, feedback_type:FeedbackType): Seq[(String,experimentResult)] = {
+    val query_dir = new File(query_location)
+    val relevance_dir = new File(relevance_location)
+
+    def getNameContent (dir: File): Seq[(String,String)] = {
+      val listFile = for {
+        file <- dir.listFiles()
+        if(file.isFile)
+      } yield file
+
+      val listContent = listFile flatMap (file => {
+        val source = Source.fromFile(file)
+        try {
+          Seq((file.getName,source.mkString.toLowerCase))
+        } catch {
+          case _ => Seq();
+        } finally {
+          source.close()
+        }
+      })
+
+      listContent
+    }
+
+    val query_content = getNameContent(query_dir)
+    val relevance_content = getNameContent(relevance_dir)
+
+    val experiment_data = for {
+      (query_name,query_text) <- query_content
+      (relevance_name,relevance_text) <- relevance_content
+      if (query_name == relevance_name)
+    } yield (query_name,query_text,relevance_text.lines.filterNot(_.isEmpty))
+
+    experiment_data.map( t=> {
+      val (name,text,relevances) = t
+      val search_result = pseudoFeedbackSearch(tf,idf,normalization,stemmer,text,top_n,feedback_type)
+      (name,computeExperimentResult(text,search_result,relevances.toSeq))
+    })
+  }
+
+  def experimentRelevanceFeedback(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
+                                  query_location: String, relevance_location: String, top_n: Int,
+                                  feedback_type:FeedbackType, search_seen: Boolean): Seq[(String,experimentResult)] = {
+    val query_dir = new File(query_location)
+    val relevance_dir = new File(relevance_location)
+
+    def getNameContent (dir: File): Seq[(String,String)] = {
+      val listFile = for {
+        file <- dir.listFiles()
+        if(file.isFile)
+      } yield file
+
+      val listContent = listFile flatMap (file => {
+        val source = Source.fromFile(file)
+        try {
+          Seq((file.getName,source.mkString.toLowerCase))
+        } catch {
+          case _ => Seq();
+        } finally {
+          source.close()
+        }
+      })
+
+      listContent
+    }
+
+    val query_content = getNameContent(query_dir)
+    val relevance_content = getNameContent(relevance_dir)
+
+    val experiment_data = for {
+      (query_name,query_text) <- query_content
+      (relevance_name,relevance_text) <- relevance_content
+      if (query_name == relevance_name)
+    } yield (query_name,query_text,relevance_text.lines.filterNot(_.isEmpty))
+
+    experiment_data.map( t=> {
+      val (name,text,relevances) = t
+      val query2weight = map_query2weight(tf,idf,normalization,stemmer,text)
+      val first_result = searchWithWeight(query2weight)
+      val search_result = relevanceFeedbackSearch(
+        newQuery2Weights,top_n,feedback_type, relevances.toSet,search_seen,first_result.map(_._1)
+      )
+      (name,computeExperimentResult(text,search_result,relevances.toSeq))
+    })
+  }
+
+  def experiments2Text(experiments: Seq[(String,experimentResult)]): String = {
+    experiments.foldLeft(new String())((s, t) => {
       val (name,result) = t
       var ret = s + "Query name: " + name + System.lineSeparator()
       ret = ret + "Query text: " + result.query + System.lineSeparator();

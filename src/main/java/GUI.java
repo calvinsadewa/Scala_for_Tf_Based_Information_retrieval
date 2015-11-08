@@ -84,13 +84,15 @@ public class GUI {
                     case 4 : tfKind = new coba.augmentedTF(); System.out.println("Augmented TF");break;
                 }
 
-                resultTextArea.setText(searchEngine.experimentText(
-                        tfKind,
-                        QIDFCheckBox.isSelected(),
-                        QnormalizationCheckBox.isSelected(),
-                        QStemCheckBox.isSelected(),
-                        queryLocationField.getText(),
-                        relevanceJudgmentLocation.getText()));
+                resultTextArea.setText(
+                        searchEngine.experiments2Text(
+                        searchEngine.experiment(
+                                tfKind,
+                                QIDFCheckBox.isSelected(),
+                                QnormalizationCheckBox.isSelected(),
+                                QStemCheckBox.isSelected(),
+                                queryLocationField.getText(),
+                                relevanceJudgmentLocation.getText())));
             }
         });
         searchButton.addActionListener(new ActionListener() {
