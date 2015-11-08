@@ -1,3 +1,3 @@
-val s = Seq(1,2,3)
+val s = Seq()
 val z = Seq(3,4,5)
-z ++ s
+z.filter(_ % 2 == 0)

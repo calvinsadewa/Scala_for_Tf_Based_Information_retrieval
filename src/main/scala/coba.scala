@@ -26,6 +26,10 @@ class coba {
   var no2title: Map[String,String] = Map()
   //set of all document title
   var setDocument: Set[String] = Set()
+  //old query weight, in case we should display it
+  var oldQuery2Weights: Map[String,Double] = Map()
+  //new query weight, in case we should display it
+  var newQuery2Weights: Map[String,Double] = Map()
 
   def stringToWordVec (s:String, stop_word: Set[String], stem: Boolean): Seq[String] = {
     val word_vec = s split "\\W+" filterNot( stop_word.contains(_))
@@ -170,11 +174,12 @@ class coba {
 
   def search(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
               query: String) : Seq[(String,Float)] = {
-    val word2weight = query2weight(tf,idf,normalization,stemmer,query)
+    val word2weight = map_query2weight(tf,idf,normalization,stemmer,query)
+    newQuery2Weights = word2weight
     searchWithWeight(word2weight)
   }
 
-  def query2weight(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
+  def map_query2weight(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
                    query: String) : Map[String, Double] = {
     val word_vec = stringToWordVec(query,stop_word,stemmer)
     val word_map = word_vec.groupBy( t => t).mapValues(_.length).withDefaultValue(0)
@@ -186,13 +191,33 @@ class coba {
     else word2weight
   }
 
-  def pseudoRelevanceSearch(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
+  def relevanceFeedbackSearch(query2weight: Map[String,Double], top_n: Int, feedback_type:FeedbackType,
+                       relevance_set: Set[String], search_seen:Boolean, prev_result:Seq[String]) : Seq[(String,Float)] = {
+    val seen_doc = prev_result.take(top_n).toSet
+    val relevant2docs = seen_doc.toSeq.groupBy(relevance_set.contains(_)).withDefaultValue(Seq())
+    val relevants = relevant2docs(true)
+    val not_relevants = relevant2docs(false)
+
+    val new_query2weight = relevanceFeedbackQueryWeight (relevants,not_relevants, query2weight,feedback_type)
+    oldQuery2Weights = query2weight
+    newQuery2Weights = new_query2weight
+
+    val ret = searchWithWeight(new_query2weight)
+    if (search_seen) ret
+    else {
+      ret.filterNot{case (doc,sim) => seen_doc.contains(doc)}
+    }
+  }
+  
+  def pseudoFeedbackSearch(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
              query: String, top_n: Int, feedback_type:FeedbackType) : Seq[(String,Float)] = {
-    val word2weight = query2weight(tf,idf,normalization,stemmer,query)
+    val word2weight = map_query2weight(tf,idf,normalization,stemmer,query)
     val first_result = searchWithWeight(word2weight)
     val (relevants, rest) = first_result.map(_._1).splitAt(top_n)
     val not_relevants = rest ++ ((setDocument -- relevants -- rest).toSeq)
     val new_word2weight = relevanceFeedbackQueryWeight (relevants,not_relevants, word2weight,feedback_type)
+    oldQuery2Weights = word2weight
+    newQuery2Weights = new_word2weight
     searchWithWeight(new_word2weight)
   }
 
@@ -203,8 +228,8 @@ class coba {
     feedback_type match {
       case roccio() => query2weight.map{case (term,weight) => {
         val doc2weight = inverted_document_file(term)
-        var new_weight = weight + relevants.foldLeft(0.0)(_ + doc2weight(_)) / relevants.length
-        new_weight = new_weight - not_relevants.foldLeft(0.0)(_ + doc2weight(_)) / not_relevants.length
+        var new_weight = weight + relevants.foldLeft(0.0)(_ + doc2weight(_)) / Math.max(relevants.length,1)
+        new_weight = new_weight - not_relevants.foldLeft(0.0)(_ + doc2weight(_)) / Math.max(not_relevants.length,1)
         (term,new_weight)
       }}
       case ide_regular() => query2weight.map{case (term,weight) => {
@@ -216,7 +241,7 @@ class coba {
       case ide_dec_hi() => query2weight.map{case (term,weight) => {
         val doc2weight = inverted_document_file(term)
         var new_weight = weight + relevants.foldLeft(0.0)(_ + doc2weight(_))
-        new_weight = new_weight - doc2weight(not_relevants.head)
+        new_weight = new_weight - not_relevants.headOption.map(doc2weight(_)).getOrElse(0.0f)
         (term,new_weight)
       }}
     }
@@ -242,7 +267,7 @@ class coba {
   }
 
   def experiment_query(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
-                       query: String, relevance: Seq[String]) = {
+                       query: String, relevance: Seq[String]): experimentResult = {
     def computeRecall (judgement : Set[String], result: Seq[String]) : Float = {
       val relevant_result = result.filter(judgement.contains(_))
       relevant_result.length.toFloat / judgement.size
@@ -362,7 +387,7 @@ class coba {
     })
   }
 
-  def TF_IDF(term:String,word_map:Map[String,Int], tfKind:coba.TF, idf:Boolean) = {
+  def TF_IDF(term:String,word_map:Map[String,Int], tfKind:coba.TF, idf:Boolean): Double = {
     val rTF = word_map(term)
     val TF = calculateTF(term,word_map,tfKind)
     val IDF =
