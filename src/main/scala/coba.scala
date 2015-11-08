@@ -31,6 +31,7 @@ class coba {
   //new query weight, in case we should display it
   var newQuery2Weights: Map[String,Double] = Map()
 
+  //tokenize string to word vector
   def stringToWordVec (s:String, stop_word: Set[String], stem: Boolean): Seq[String] = {
     val word_vec = s split "\\W+" filterNot( stop_word.contains(_))
     if (stem) {
@@ -40,6 +41,7 @@ class coba {
     else word_vec
   }
 
+  //calculate TF of a term in a document (word_map)
   def calculateTF (term: String, word_map: Map[String,Int], tfKind: coba.TF) : Double = {
     val rTF = word_map(term)
     val TF = tfKind match {
@@ -172,6 +174,8 @@ class coba {
     writer.close();
   }
 
+  //return List of (doc name,similarity) by search the inverted file using the
+  //TF-IDF-Normalization weighting method for query
   def search(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
               query: String) : Seq[(String,Float)] = {
     val word2weight = map_query2weight(tf,idf,normalization,stemmer,query)
@@ -179,6 +183,7 @@ class coba {
     searchWithWeight(word2weight)
   }
 
+  //get map (query_term -> weight) from query using TF-IDF-Normalization weighting method
   def map_query2weight(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
                    query: String) : Map[String, Double] = {
     val word_vec = stringToWordVec(query,stop_word,stemmer)
@@ -191,6 +196,7 @@ class coba {
     else word2weight
   }
 
+  //Relevance Feedback using old weighted query(query2weight)
   def relevanceFeedbackSearch(query2weight: Map[String,Double], top_n: Int, feedback_type:FeedbackType,
                        relevance_set: Set[String], search_seen:Boolean, prev_result:Seq[String]) : Seq[(String,Float)] = {
     val seen_doc = prev_result.take(top_n).toSet
@@ -208,7 +214,8 @@ class coba {
       ret.filterNot{case (doc,sim) => seen_doc.contains(doc)}
     }
   }
-  
+
+  //Pseudo feedback variant of search
   def pseudoFeedbackSearch(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
              query: String, top_n: Int, feedback_type:FeedbackType) : Seq[(String,Float)] = {
     val word2weight = map_query2weight(tf,idf,normalization,stemmer,query)
@@ -247,6 +254,7 @@ class coba {
     }
   }
 
+  //get List of (doc name, similarity) using query with weight and inverted file
   def searchWithWeight(word2weight: Map[String,Double]) : Seq[(String,Float)] = {
 
     var document_similarity:Map[String,Float] = Map()
@@ -266,6 +274,8 @@ class coba {
     document_similarity.toSeq.sortBy(_._2).reverse
   }
 
+  //Computer the experiment result (precission,recall,non interpolated average precission)
+  //for a search result by query using relevance
   def computeExperimentResult(query:String, search_result: Seq[(String,Float)], relevance: Seq[String]): experimentResult = {
     def computeRecall (judgement : Set[String], result: Seq[String]) : Float = {
       val relevant_result = result.filter(judgement.contains(_))
@@ -322,6 +332,7 @@ class coba {
       computeNonInterpolatedPrecision(judge_set,resultString))
   }
 
+  //Experiment for normal TF-IDF-Normalization model
   def experiment(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
                        query_location: String, relevance_location: String): Seq[(String,experimentResult)] = {
     val query_dir = new File(query_location)
@@ -363,6 +374,7 @@ class coba {
     })
   }
 
+  //Experiment for pseudo feedback TF-IDF-Normalization model
   def experimentPseudoFeedback(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
                  query_location: String, relevance_location: String, top_n: Int, feedback_type:FeedbackType): Seq[(String,experimentResult)] = {
     val query_dir = new File(query_location)
@@ -404,6 +416,7 @@ class coba {
     })
   }
 
+  //Experiment for relevance feedback TF-IDF-Normalization model
   def experimentRelevanceFeedback(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
                                   query_location: String, relevance_location: String, top_n: Int,
                                   feedback_type:FeedbackType, search_seen: Boolean): Seq[(String,experimentResult)] = {
@@ -450,6 +463,7 @@ class coba {
     })
   }
 
+  // change experiment result to readable string, mainly for convinience
   def experiments2Text(experiments: Seq[(String,experimentResult)]): String = {
     experiments.foldLeft(new String())((s, t) => {
       val (name,result) = t
@@ -471,6 +485,7 @@ class coba {
     })
   }
 
+  //Calculate the TF-IDF of a term in document(word_map)
   def TF_IDF(term:String,word_map:Map[String,Int], tfKind:coba.TF, idf:Boolean): Double = {
     val rTF = word_map(term)
     val TF = calculateTF(term,word_map,tfKind)
