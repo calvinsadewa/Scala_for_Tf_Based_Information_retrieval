@@ -246,6 +246,8 @@ public class GUI {
                             seachSeen.isSelected(),
                             coba.stripSimilarity(prev_result));
 
+                    prev_result = result;
+
                     data = new Object[result.length()][];
                     for (int i = 0; i < result.length(); i++) {
                         Tuple2<String, Object> res = result.apply(i);

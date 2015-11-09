@@ -1,0 +1,7681 @@
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.11046861954299467
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.11046861954299467
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.1097008153929242
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.1097008153929242
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10941310430477773
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10941310430477773
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10808132100584252
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10808132100584252
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10806608286553196
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10806608286553196
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10763215237696255
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10763215237696255
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10734333610162139
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10734333610162139
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10722048486183797
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10722048486183797
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10699119515983121
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10699119515983121
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10661232667043805
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10661232667043805
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10645963694634182
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10645963694634182
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10635419409455997
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10635419409455997
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10608498077573521
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10608498077573521
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10482115632455263
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10482115632455263
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10481285478121467
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10481285478121467
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10461180501484445
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10461180501484445
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10443554814638836
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10443554814638836
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10375691669593964
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10375691669593964
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10367508132808975
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10367508132808975
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10360354904883674
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10360354904883674
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10223721738106438
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10223721738106438
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10223721738106438
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10221532374354346
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.1019094167410263
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.1019094167410263
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10112797431647777
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10112797431647777
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10077746445313096
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10077746445313096
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10064152823761105
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10064152823761105
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10059803781498755
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10059803781498755
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10057390571704933
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10057390571704933
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10051734092246209
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10051734092246209
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10051734092246209
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10051734092246209
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10040184412417667
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10040184412417667
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10040184412417667
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10037995048665575
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.10019947145400303
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.10019947145400303
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.1000871917232871
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.1000871917232871
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09994002679096801
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09994002679096801
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09993510657389248
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09993510657389248
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09993510657389248
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09993510657389248
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0999138402486486
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0999138402486486
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0999138402486486
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09989194661112769
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09972958309309823
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09972958309309823
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09963763668867094
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09963763668867094
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09963763668867094
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09961574305115002
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0995486252675099
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0995486252675099
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0995486252675099
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0995486252675099
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09939958040735551
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09939958040735551
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09939010000920721
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09939010000920721
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09938512781102743
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09938512781102743
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09935221447210227
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09935221447210227
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09927220613296543
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09927220613296543
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09919339709782175
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09919339709782175
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09919339709782175
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09919339709782175
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09918727530166507
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09918727530166507
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09918727530166507
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09918727530166507
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09917132022923657
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09917132022923657
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09914032147665108
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09914032147665108
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09912274060770869
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09912274060770869
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09895635277831129
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09895635277831129
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09870675186227475
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09870675186227475
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09860585230801787
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09860585230801787
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09859647689653295
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09859647689653295
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09859647689653295
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09859647689653295
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09845540692497577
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09845540692497577
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09840882432514003
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09840882432514003
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0983287101744541
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0983287101744541
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09831145343237689
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09831145343237689
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0981359837709793
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0981359837709793
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09811768227123789
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09811768227123789
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09811768227123789
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09811768227123789
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09811355045863561
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09811355045863561
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09809063229975956
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09809063229975956
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09808568660435932
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09808568660435932
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09801790742203594
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09801790742203594
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09800794082028526
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09800794082028526
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09796401872964842
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09796401872964842
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09796192669974906
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09796192669974906
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09796192669974906
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09796192669974906
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0979107935912907
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0979107935912907
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0979107935912907
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0979107935912907
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09790507042780519
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09790507042780519
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09781809386664203
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09781809386664203
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09780615424471242
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09780615424471242
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0977930961043707
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0977930961043707
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0977737066335976
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0977737066335976
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09770626059866377
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09770626059866377
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09769590088565434
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09769590088565434
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09759718803688884
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09759718803688884
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09754859242322189
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09754859242322189
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09752247904294303
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09752247904294303
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09751142030581832
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09751142030581832
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09746229672538383
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09746229672538383
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09746229672538383
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09746229672538383
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09745423560962081
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09745423560962081
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0974405094049871
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0974405094049871
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09737916377239994
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09737916377239994
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09729075930746538
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09729075930746538
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09698849555903248
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09698849555903248
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09691098799396838
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09691098799396838
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0966642719693482
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0966642719693482
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0966642719693482
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0966642719693482
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0964479269992028
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0964479269992028
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0964479269992028
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0964479269992028
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09614478732858385
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09614478732858385
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09613649846453752
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09613649846453752
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09595253761591656
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09595253761591656
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09591120264625976
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09591120264625976
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09577010054407376
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09577010054407376
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09577010054407376
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09577010054407376
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09547448534784572
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09547448534784572
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09547448534784572
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09547448534784572
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09530101041974766
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09530101041974766
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09511959358517613
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09511959358517613
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0949502146004566
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0949502146004566
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0949502146004566
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09491139473393559
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09490955845851984
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09490955845851984
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09485682154606495
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09485682154606495
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09484479086739676
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09484479086739676
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09474676428362727
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09474676428362727
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09465233574488334
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09465233574488334
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09458500092316952
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09458500092316952
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09458500092316952
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09458500092316952
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09454991339838931
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09454991339838931
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0945428882991629
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0945428882991629
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09446912743151188
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09446912743151188
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0944486682569342
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0944486682569342
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09431861137439097
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09431861137439097
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09431861137439097
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09431861137439097
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09427187533250876
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09427187533250876
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09408719024753996
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09408719024753996
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09402194424931493
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09400885251483747
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09378377535779561
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09378377535779561
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09372094820386596
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09372094820386596
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09363476469048432
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09363476469048432
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09360656340473465
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09360656340473465
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09320871349690216
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09320871349690216
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09320871349690216
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09320871349690216
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0931060547940433
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0931060547940433
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09306468905082771
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09306468905082771
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09303343941324524
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09303343941324524
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09285889851993748
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09285889851993748
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09285889851993748
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09285889851993748
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09280316717922688
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09280316717922688
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09279262279825551
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09279262279825551
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0927914306920554
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0927914306920554
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09265636998627867
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09265636998627867
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09257272476596491
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09257272476596491
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09254057960850852
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09254057960850852
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09253886912816338
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09253886912816338
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09241868816316127
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09241868816316127
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09222995900948133
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09222995900948133
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09216722420283727
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09216722420283727
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09212346060999803
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09212346060999803
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09204807160422206
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09204807160422206
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09194924851347293
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09194924851347293
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09186362000182272
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09186362000182272
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09183303989203913
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09183303989203913
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09174468319064805
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09174468319064805
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09173040304865156
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09173040304865156
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09159579678837743
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09158270505389997
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09157989659745779
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09157989659745779
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09153088239420737
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09153088239420737
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09152873813041619
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09152873813041619
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09124835309173379
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09124835309173379
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09124700601345727
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09124700601345727
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09104826709787761
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09104826709787761
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09054523481588278
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09054523481588278
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09054523481588278
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09054523481588278
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09048247559528266
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09048247559528266
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09041732995371733
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09041732995371733
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09041552805740918
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09041552805740918
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09020919149209346
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09020919149209346
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09020919149209346
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09020919149209346
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09009672875649162
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09009672875649162
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.09004634654681598
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.09004634654681598
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08999178370993052
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08999178370993052
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08996867329946585
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08996867329946585
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08996662737003394
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08996662737003394
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08987137414515019
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08987137414515019
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08979213252397521
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08979213252397521
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08978948219280158
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08978948219280158
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08978948219280158
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08978948219280158
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08971324428649885
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08971324428649885
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08966328532301954
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08966328532301954
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08966328532301954
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08966328532301954
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08950974021905235
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08950974021905235
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08934940135638629
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08934940135638629
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08905736866540143
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08905736866540143
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08905736866540143
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08905736866540143
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08896704932142581
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08896704932142581
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08896704932142581
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08896704932142581
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08881638453208975
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08881638453208975
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08881638453208975
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08881638453208975
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0887381162494421
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0887381162494421
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08854919181072286
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08854919181072286
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08854919181072286
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08854919181072286
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08842981578782201
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08842981578782201
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08842934316822461
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08837947926617094
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08837947926617094
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08814607997025763
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08813065701563444
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08813065701563444
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08810003012684839
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08810003012684839
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08802014593301075
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08802014593301075
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08773000024791275
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08773000024791275
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08737200907032405
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08737200907032405
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08736251766926476
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08736251766926476
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08736251766926476
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08736251766926476
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08719700210328613
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08719700210328613
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08705016873510821
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08705016873510821
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0868730611034802
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0868202533040728
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08664275116420218
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08664275116420218
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08652890520170331
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08652890520170331
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08638012652684535
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08634594390168786
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08584074322134257
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08584074322134257
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08563984106960042
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08563984106960042
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08540023977735213
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08540023977735213
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08497538216678159
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08497538216678159
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08453879080978888
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08451354473030993
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08451354473030993
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08450460818463139
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08441008775095854
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08437590512580105
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08428253371800695
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08422612909759794
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08422612909759794
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08397466689348221
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.083909136668912
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.083909136668912
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0838865048119
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08386186357321483
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08382768094805734
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08368342742323875
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08368342742323875
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08340986637132508
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08324669413268566
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08297281732250537
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08297281732250537
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08294865834925856
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08262448399992926
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08262448399992926
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08251940576093537
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08251940576093537
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08219822953854289
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08219822953854289
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08180491501199348
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08180491501199348
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08175949025899172
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08172783119870083
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08172783119870083
+------------END-----------------
+Konfigurasi index
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0816659092637045
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08153348777975356
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0814381942152977
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.08028519365138241
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.08023984218016267
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.07957185587978789
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.07957185587978789
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.07923558342403599
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.07923558342403599
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.07854201906759824
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.07854201906759824
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.07823524554925305
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.07811616632555213
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.07758238056142415
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.07741957984066435
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.07740641707288368
+------------END-----------------
+Konfigurasi index
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.07731112350842782
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.07724377000704408
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.07724377000704408
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.07646230548354131
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.07621086046897939
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.07594349452161363
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.07573364402300545
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.075590277928859
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.07554361571424774
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.07552736751469118
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Dengan stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.07505342727527023
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.07286869073286653
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.07286869073286653
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.07269745808360832
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.07269745808360832
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.071997879405639
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.07176458129127111
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.0717596194174673
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.07168403306443777
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.071227150503546
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.071227150503546
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.07090516461591635
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.07090516461591635
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.07086673401562231
+------------END-----------------
+Konfigurasi index
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.07086673401562231
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.07084448522488986
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.07084448522488986
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.06315653322796737
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.06311359172686934
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.06291518239304424
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Logistic TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.06288896286860109
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.06288814998364874
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.06278412082631674
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Augmented TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Dengan normalization
+------------
+Non Interpolated Precission
+Mean = 0.0627722385339439
+------------END-----------------
+Konfigurasi index
+TF = Raw TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Konfigurasi query
+TF = Binary TF
+IDF = Tidak IDF
+Stemmer = Tidak pakai stemmer
+Normalization = Tidak pakai normalization
+------------
+Non Interpolated Precission
+Mean = 0.06264067862981132
+------------END-----------------
+

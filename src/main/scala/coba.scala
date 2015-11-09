@@ -277,12 +277,12 @@ class coba {
   def computeExperimentResult(query:String, search_result: Seq[(String,Float)], relevance: Seq[String]): experimentResult = {
     def computeRecall (judgement : Set[String], result: Seq[String]) : Float = {
       val relevant_result = result.filter(judgement.contains(_))
-      relevant_result.length.toFloat / judgement.size
+      relevant_result.length.toFloat / Math.max(judgement.size,1)
     }
 
     def computePrecision (judgement : Set[String], result: Seq[String]) : Float = {
       val relevant_result = result.filter(judgement.contains(_))
-      relevant_result.length.toFloat / result.length
+      relevant_result.length.toFloat / Math.max(result.length,1)
     }
 
     def computeNonInterpolatedPrecision (judgement : Set[String], result: Seq[String]) : Float = {
@@ -295,7 +295,7 @@ class coba {
         }
         else matched
       })
-      (ret/judgement.size).toFloat
+      (ret/Math.max(judgement.size,1)).toFloat
     }
 
     val resultString = search_result.map(_._1)
@@ -441,16 +441,26 @@ class coba {
 
   // change experiment result to readable string, mainly for convinience
   def experiments2Text(experiments: Seq[(String,experimentResult)]): String = {
-    experiments.foldLeft(new String())((s, t) => {
+    val text = experiments.foldLeft(new String())((s, t) => {
       val (name,result) = t
       var ret = s + "Query name: " + name + System.lineSeparator()
       ret = ret + "Query text: " + result.query + System.lineSeparator();
       ret = ret + "Precission: " + result.precission + System.lineSeparator();
       ret = ret + "Recall: " + result.recall + System.lineSeparator();
-      ret = ret + "Non Interpolated recall precission: " + result.interpolated_precission + System.lineSeparator()
+      ret = ret + "Non Interpolated average precission: " + result.interpolated_precission + System.lineSeparator()
       ret = ret + "-------------" + System.lineSeparator()
       ret
-    })
+    });
+    {
+      val precissions = experiments.map(_._2.precission.toDouble).toArray
+      val recalls = experiments.map(_._2.recall.toDouble).toArray
+      val NIAPs = experiments.map(_._2.interpolated_precission.toDouble).toArray
+      "Mean Precission = " + new Statistic(precissions).getMean + System.lineSeparator() +
+      "Mean Recall = " + new Statistic(recalls).getMean + System.lineSeparator() +
+      "Mean Non Interpolated average precission = " + new Statistic(NIAPs).getMean + System.lineSeparator() +
+      "-------------" + System.lineSeparator() +
+      text
+    }
   }
 
   def searchToText(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
@@ -490,12 +500,12 @@ object coba {
   def main(args: Array[String]) = time {
     import java.io.PrintWriter
 
-    val doc_location = "D:\\tugas\\Scala_for_Tf_Based_Information_retrieval\\CISI\\doc"
-    val query_location = "D:\\tugas\\Scala_for_Tf_Based_Information_retrieval\\CISI\\query"
-    val relevance_location = "D:\\tugas\\Scala_for_Tf_Based_Information_retrieval\\CISI\\relevance"
+    val doc_location = "D:\\tugas\\Scala_for_Tf_Based_Information_retrieval\\ADI\\doc"
+    val query_location = "D:\\tugas\\Scala_for_Tf_Based_Information_retrieval\\ADI\\query"
+    val relevance_location = "D:\\tugas\\Scala_for_Tf_Based_Information_retrieval\\ADI\\relevance"
     val stop_word_location = "D:\\tugas\\Scala_for_Tf_Based_Information_retrieval\\stop_word.txt"
 
-    val experiment_normal = false
+    val experiment_normal = true
     val experiment_pseudo_feedback = true
     val experiment_relevance_feedback = true
 
