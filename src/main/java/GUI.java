@@ -46,6 +46,7 @@ public class GUI {
     private JCheckBox seachSeen;
     private JButton feedbackButton;
     private JTable searchTable;
+    private JCheckBox expansionCheckBox;
     Object[] columnNames = {"No", "Title", "Similarity", "Relevant?"};
     Object[][] data = {
             {"1", "dummy", new Double(0), false},
@@ -124,30 +125,51 @@ public class GUI {
                 else if (feedbackSelection1.getSelectedIndex() == 1) {
                     resultTextArea.setText(
                             searchEngine.experiments2Text(
-                                    searchEngine.experimentRelevanceFeedback(
-                                            tfKind,
-                                            QIDFCheckBox.isSelected(),
-                                            QnormalizationCheckBox.isSelected(),
-                                            QStemCheckBox.isSelected(),
-                                            queryLocationField.getText(),
-                                            relevanceJudgmentLocation.getText(),
-                                            Integer.parseInt(topNTextField.getText()),
-                                            feedKind,
-                                            seachSeen.isSelected())));
+                                    expansionCheckBox.isSelected() ?
+                                            searchEngine.experimentRelevanceFeedbackWithExpansion(
+                                                    tfKind,
+                                                    QIDFCheckBox.isSelected(),
+                                                    QnormalizationCheckBox.isSelected(),
+                                                    QStemCheckBox.isSelected(),
+                                                    queryLocationField.getText(),
+                                                    relevanceJudgmentLocation.getText(),
+                                                    Integer.parseInt(topNTextField.getText()),
+                                                    feedKind,
+                                                    seachSeen.isSelected()) :
+                                            searchEngine.experimentRelevanceFeedback(
+                                                    tfKind,
+                                                    QIDFCheckBox.isSelected(),
+                                                    QnormalizationCheckBox.isSelected(),
+                                                    QStemCheckBox.isSelected(),
+                                                    queryLocationField.getText(),
+                                                    relevanceJudgmentLocation.getText(),
+                                                    Integer.parseInt(topNTextField.getText()),
+                                                    feedKind,
+                                                    seachSeen.isSelected())));
                 }
                 //Pseudo Relevance Feedback
                 else if (feedbackSelection1.getSelectedIndex() == 2) {
                     resultTextArea.setText(
                             searchEngine.experiments2Text(
-                                    searchEngine.experimentPseudoFeedback(
-                                            tfKind,
-                                            QIDFCheckBox.isSelected(),
-                                            QnormalizationCheckBox.isSelected(),
-                                            QStemCheckBox.isSelected(),
-                                            queryLocationField.getText(),
-                                            relevanceJudgmentLocation.getText(),
-                                            Integer.parseInt(topNTextField.getText()),
-                                            feedKind)));
+                                    expansionCheckBox.isSelected() ?
+                                            searchEngine.experimentPseudoFeedbackWithExpansion(
+                                                    tfKind,
+                                                    QIDFCheckBox.isSelected(),
+                                                    QnormalizationCheckBox.isSelected(),
+                                                    QStemCheckBox.isSelected(),
+                                                    queryLocationField.getText(),
+                                                    relevanceJudgmentLocation.getText(),
+                                                    Integer.parseInt(topNTextField.getText()),
+                                                    feedKind) :
+                                            searchEngine.experimentPseudoFeedback(
+                                                    tfKind,
+                                                    QIDFCheckBox.isSelected(),
+                                                    QnormalizationCheckBox.isSelected(),
+                                                    QStemCheckBox.isSelected(),
+                                                    queryLocationField.getText(),
+                                                    relevanceJudgmentLocation.getText(),
+                                                    Integer.parseInt(topNTextField.getText()),
+                                                    feedKind)));
                 }
             }
         });
@@ -185,13 +207,21 @@ public class GUI {
                 }
                 //Pseudo Relevance Feedback
                 else if (feedbackSelection1.getSelectedIndex() == 2) {
-                    Seq<Tuple2<String,Object>> result = searchEngine.pseudoFeedbackSearch(tfKind,
-                            QIDFCheckBox.isSelected(),
-                            QnormalizationCheckBox.isSelected(),
-                            QStemCheckBox.isSelected(),
-                            searchField.getText(),
-                            Integer.parseInt(topNTextField.getText()),
-                            feedKind);
+                    Seq<Tuple2<String,Object>> result = expansionCheckBox.isSelected() ?
+                            searchEngine.pseudoFeedbackSearchWithExpansion(tfKind,
+                                    QIDFCheckBox.isSelected(),
+                                    QnormalizationCheckBox.isSelected(),
+                                    QStemCheckBox.isSelected(),
+                                    searchField.getText(),
+                                    Integer.parseInt(topNTextField.getText()),
+                                    feedKind) :
+                            searchEngine.pseudoFeedbackSearch(tfKind,
+                                    QIDFCheckBox.isSelected(),
+                                    QnormalizationCheckBox.isSelected(),
+                                    QStemCheckBox.isSelected(),
+                                    searchField.getText(),
+                                    Integer.parseInt(topNTextField.getText()),
+                                    feedKind);
 
                     prev_result = result;
 
@@ -238,13 +268,21 @@ public class GUI {
                             relevances.add((String)row[1]);
                     }
 
-                    Seq<Tuple2<String,Object>> result = searchEngine.relevanceFeedbackSearch(
-                            searchEngine.newQuery2Weights(),
-                            Integer.parseInt(topNTextField.getText()),
-                            feedKind,
-                            coba.javaSet2scalaSet(relevances),
-                            seachSeen.isSelected(),
-                            coba.stripSimilarity(prev_result));
+                    Seq<Tuple2<String,Object>> result = expansionCheckBox.isSelected() ?
+                            searchEngine.relevanceFeedbackSearchExpansion(
+                                searchEngine.newQuery2Weights(),
+                                Integer.parseInt(topNTextField.getText()),
+                                feedKind,
+                                coba.javaSet2scalaSet(relevances),
+                                seachSeen.isSelected(),
+                                coba.stripSimilarity(prev_result)) :
+                            searchEngine.relevanceFeedbackSearch(
+                                    searchEngine.newQuery2Weights(),
+                                    Integer.parseInt(topNTextField.getText()),
+                                    feedKind,
+                                    coba.javaSet2scalaSet(relevances),
+                                    seachSeen.isSelected(),
+                                    coba.stripSimilarity(prev_result));
 
                     prev_result = result;
 

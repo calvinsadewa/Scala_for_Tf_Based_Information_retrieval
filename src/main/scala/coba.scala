@@ -226,6 +226,38 @@ class coba {
     searchWithWeight(new_word2weight)
   }
 
+  //Relevance Feedback using old weighted query(query2weight) with expansion
+  def relevanceFeedbackSearchExpansion(query2weight: Map[String,Double], top_n: Int, feedback_type:coba.FeedbackType,
+                              relevance_set: Set[String], search_seen:Boolean, prev_result:Seq[String]) : Seq[(String,Float)] = {
+    val seen_doc = prev_result.take(top_n).toSet
+    val relevant2docs = seen_doc.toSeq.groupBy(relevance_set.contains(_)).withDefaultValue(Seq())
+    val relevants = relevant2docs(true)
+    val not_relevants = relevant2docs(false)
+
+    val new_query2weight = relevanceFeedbackQueryWeightExpansion (relevants,not_relevants, query2weight,feedback_type)
+    oldQuery2Weights = query2weight
+    newQuery2Weights = new_query2weight
+
+    val ret = searchWithWeight(new_query2weight).filter(_._2 > 0)
+    if (search_seen) ret
+    else {
+      ret.filterNot{case (doc,sim) => seen_doc.contains(doc)}
+    }
+  }
+
+  //Pseudo feedback variant of search with expansion
+  def pseudoFeedbackSearchWithExpansion(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
+                           query: String, top_n: Int, feedback_type:coba.FeedbackType) : Seq[(String,Float)] = {
+    val word2weight = map_query2weight(tf,idf,normalization,stemmer,query)
+    val first_result = searchWithWeight(word2weight)
+    val (relevants, rest) = first_result.map(_._1).splitAt(top_n)
+    val not_relevants = rest ++ ((setDocument -- relevants -- rest).toSeq)
+    val new_word2weight = relevanceFeedbackQueryWeightExpansion (relevants,not_relevants, word2weight,feedback_type).filter(_._2 > 0)
+    oldQuery2Weights = word2weight
+    newQuery2Weights = new_word2weight
+    searchWithWeight(new_word2weight)
+  }
+
   //return the modified query weight using the relevance feedback type
   // not_relevants head should be has max similarity if using ide_dec_hi feedback type
   def relevanceFeedbackQueryWeight (relevants:Seq[String],not_relevants:Seq[String], query2weight: Map[String,Double],
@@ -250,6 +282,34 @@ class coba {
         (term,new_weight)
       }}.filter(_._2 > 0)
     }
+  }
+
+  // return the modified and expansion query weight using the relevance feedback type
+  // not_relevants head should be has max similarity if using ide_dec_hi feedback type
+  // CAREFUL: term weight may be negative
+  def relevanceFeedbackQueryWeightExpansion (relevants:Seq[String],not_relevants:Seq[String], query2weight: Map[String,Double],
+                                    feedback_type:coba.FeedbackType): Map[String,Double] = {
+    val new_query2weight:collection.mutable.Map[String,Double] = collection.mutable.Map().withDefaultValue(0)
+    feedback_type match {
+      case coba.roccio() => inverted_document_file.foreach{case (term,doc2weight) => {
+        relevants.foreach(doc => new_query2weight.update(term,new_query2weight(term) + doc2weight(doc)))
+        new_query2weight.update(term,new_query2weight(term)/Math.max(relevants.length,1))
+        val temp = new_query2weight(term)
+        not_relevants.foreach(doc => new_query2weight.update(term,new_query2weight(term) - doc2weight(doc)))
+        new_query2weight.update(term,temp+(new_query2weight(term)-temp)/Math.max(not_relevants.length,1))
+      }}
+      case coba.ide_regular() => inverted_document_file.foreach{case (term,doc2weight) => {
+        relevants.foreach(doc => new_query2weight.update(term,new_query2weight(term) + doc2weight(doc)))
+        new_query2weight.update(term,new_query2weight(term)/relevants.length)
+        not_relevants.foreach(doc => new_query2weight.update(term,new_query2weight(term) - doc2weight(doc)))
+      }}
+      case coba.ide_dec_hi() => inverted_document_file.foreach{case (term,doc2weight) => {
+        relevants.foreach(doc => new_query2weight.update(term,new_query2weight(term) + doc2weight(doc)))
+        not_relevants.headOption.map(doc => new_query2weight.update(term,new_query2weight(term) - doc2weight(doc)))
+      }}
+    }
+    query2weight.foreach{case (term,weight) => new_query2weight.update(term,new_query2weight(term) + weight)}
+    new_query2weight.toMap.withDefaultValue(0.0).filterNot{case (term,weight) => weight == 0}
   }
 
   //get List of (doc name, similarity) using query with weight and inverted file
@@ -433,6 +493,94 @@ class coba {
       val query2weight = map_query2weight(tf,idf,normalization,stemmer,text)
       val first_result = searchWithWeight(query2weight)
       val search_result = relevanceFeedbackSearch(
+        query2weight,top_n,feedback_type, relevances.toSet,search_seen,first_result.map(_._1)
+      )
+      (name,computeExperimentResult(text,search_result,relevances.toSeq))
+    })
+  }
+
+  def experimentPseudoFeedbackWithExpansion(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
+                               query_location: String, relevance_location: String, top_n: Int, feedback_type:coba.FeedbackType): Seq[(String,experimentResult)] = {
+    val query_dir = new File(query_location)
+    val relevance_dir = new File(relevance_location)
+
+    def getNameContent (dir: File): Seq[(String,String)] = {
+      val listFile = for {
+        file <- dir.listFiles()
+        if(file.isFile)
+      } yield file
+
+      val listContent = listFile flatMap (file => {
+        val source = Source.fromFile(file)
+        try {
+          Seq((file.getName,source.mkString.toLowerCase))
+        } catch {
+          case _ => Seq();
+        } finally {
+          source.close()
+        }
+      })
+
+      listContent
+    }
+
+    val query_content = getNameContent(query_dir)
+    val relevance_content = getNameContent(relevance_dir)
+
+    val experiment_data = for {
+      (query_name,query_text) <- query_content
+      (relevance_name,relevance_text) <- relevance_content
+      if (query_name == relevance_name)
+    } yield (query_name,query_text,relevance_text.lines.filterNot(_.isEmpty).toSeq)
+
+    experiment_data.map( t=> {
+      val (name,text,relevances) = t
+      val search_result = pseudoFeedbackSearchWithExpansion(tf,idf,normalization,stemmer,text,top_n,feedback_type)
+      (name,computeExperimentResult(text,search_result,relevances.toSeq))
+    })
+  }
+
+  //Experiment for relevance feedback TF-IDF-Normalization model
+  def experimentRelevanceFeedbackWithExpansion(tf: coba.TF, idf: Boolean, normalization: Boolean, stemmer : Boolean,
+                                  query_location: String, relevance_location: String, top_n: Int,
+                                  feedback_type:coba.FeedbackType, search_seen: Boolean): Seq[(String,experimentResult)] = {
+    val query_dir = new File(query_location)
+    val relevance_dir = new File(relevance_location)
+
+    def getNameContent (dir: File): Seq[(String,String)] = {
+      val listFile = for {
+        file <- dir.listFiles()
+        if(file.isFile)
+      } yield file
+
+      val listContent = listFile flatMap (file => {
+        val source = Source.fromFile(file)
+        try {
+          Seq((file.getName,source.mkString.toLowerCase))
+        } catch {
+          case _ => Seq();
+        } finally {
+          source.close()
+        }
+      })
+
+      listContent
+    }
+
+    val query_content = getNameContent(query_dir)
+    val relevance_content = getNameContent(relevance_dir)
+
+    val experiment_data = for {
+      (query_name,query_text) <- query_content
+      (relevance_name,relevance_text) <- relevance_content
+      if (query_name == relevance_name)
+    } yield (query_name,query_text,relevance_text.lines.filterNot(_.isEmpty).toSeq)
+
+    experiment_data.map( t=> {
+      val (name,text,relevances) = t
+      val query2weight = map_query2weight(tf,idf,normalization,stemmer,text)
+      val first_result = searchWithWeight(query2weight)
+      val search_result = relevanceFeedbackSearchExpansion(
         query2weight,top_n,feedback_type, relevances.toSet,search_seen,first_result.map(_._1)
       )
       (name,computeExperimentResult(text,search_result,relevances.toSeq))
